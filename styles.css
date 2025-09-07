@@ -1,0 +1,78 @@
+:root {
+    --primary: #4a6fa5;
+    --secondary: #6b8cae;
+    --accent: #ff7e5f;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --success: #28a745;
+    --warning: #ffc107;
+    --info: #17a2b8;
+}
+
+body {
+    background-color: #f5f7fa;
+    color: var(--dark);
+}
+
+.card {
+    background-color: white;
+    border-radius: 0.5rem; /* rounded-lg */
+    padding: 1.5rem; /* p-6 */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.card h2 {
+    color: var(--primary);
+    margin-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--secondary);
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.task-item:last-child {
+    border-bottom: none;
+}
+
+.task-checkbox {
+    margin-right: 10px;
+    width: 18px;
+    height: 18px;
+    accent-color: var(--primary);
+}
+
+.task-label.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.progress-bar {
+    transition: width 0.5s ease-in-out;
+}
+
+#wins-list li {
+    transition: opacity 0.5s ease-in-out;
+}
+
+.progress-tracker, .notes-section {
+    background-color: var(--light);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+input[type="text"], input[type="time"], input[type="date"], textarea {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    color: var(--dark);
+}
